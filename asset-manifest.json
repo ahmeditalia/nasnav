@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/static/js/main.4050131b.js",
+    "static/js/996.824a7696.chunk.js": "/static/js/996.824a7696.chunk.js",
+    "static/js/787.98093fa4.chunk.js": "/static/js/787.98093fa4.chunk.js",
+    "static/js/367.ff3eda24.chunk.js": "/static/js/367.ff3eda24.chunk.js",
+    "static/js/620.d0d719a1.chunk.js": "/static/js/620.d0d719a1.chunk.js",
+    "static/media/204630-0ey-1.jpg": "/static/media/204630-0ey-1.1f93737deb2ac32b2717.jpg",
+    "static/media/206868-001-1.jpg": "/static/media/206868-001-1.09634c43c0b9994474d1.jpg",
+    "static/media/206772-001-1.jpg": "/static/media/206772-001-1.68c5774d911e30094ce5.jpg",
+    "static/media/206520-90h-1.jpg": "/static/media/206520-90h-1.306d5c33ca7f9c095915.jpg",
+    "static/media/204563-22z-1.jpg": "/static/media/204563-22z-1.e5971dd5fffc4d7cb4c5.jpg",
+    "static/media/h00866-5-footwear-photography-front-lateral-top-view-white.jpg": "/static/media/h00866-5-footwear-photography-front-lateral-top-view-white.c5aa54b569daeb3083e5.jpg",
+    "static/media/h00917-5-footwear-photography-front-lateral-top-view-white.jpg": "/static/media/h00917-5-footwear-photography-front-lateral-top-view-white.2c91e6fad2ce15639ff1.jpg",
+    "static/media/ef7789-5-footwear-photography-front-lateral-top-view-white.jpg": "/static/media/ef7789-5-footwear-photography-front-lateral-top-view-white.46f0bdbbad3fa9d6aa88.jpg",
+    "index.html": "/index.html",
+    "main.4050131b.js.map": "/static/js/main.4050131b.js.map",
+    "996.824a7696.chunk.js.map": "/static/js/996.824a7696.chunk.js.map",
+    "787.98093fa4.chunk.js.map": "/static/js/787.98093fa4.chunk.js.map",
+    "367.ff3eda24.chunk.js.map": "/static/js/367.ff3eda24.chunk.js.map",
+    "620.d0d719a1.chunk.js.map": "/static/js/620.d0d719a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4050131b.js"
+  ]
+}
