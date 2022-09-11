@@ -11,11 +11,11 @@ class Navbar extends React.Component {
             pages: [
                 {
                     text: "Home",
-                    url: "/"
+                    url: "/nasnav"
                 },
                 {
                     text: "Dashborad",
-                    url: "dashboard"
+                    url: "/nasnav/dashboard"
                 }
             ],
         }
