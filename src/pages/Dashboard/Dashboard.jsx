@@ -20,12 +20,12 @@ class Dashboard extends React.Component {
         const { addtoCart, removeFromCart } = this.props;
         const { products } = this.state;
         return (
-            <Box padding={20}>
+            <Box paddingY={{xs: 5, md:10}} paddingX={{xs: 0 , md:20}}>
                 <Grid container spacing={6} justifyContent="center">{
                     products.map((item) => {
                         return (
-                            <Suspense fallback={<div>loading</div>}>
-                                <Grid item key={item.id}>
+                            <Suspense key={item.id} fallback={<div>loading</div>}>
+                                <Grid item >
                                     <ProductCard addtoCart={addtoCart} removeFromCart={removeFromCart} product={item} />
                                 </Grid>
                             </Suspense>

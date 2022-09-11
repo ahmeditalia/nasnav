@@ -4,7 +4,7 @@ import { Component } from "react";
 class Home extends Component{
     render(){
         return(
-            <Box padding={10}>
+            <Box display={"flex"} justifyContent={"center"} alignItems={'center'}>
                 <Typography variant="h2">Welcome</Typography>
             </Box>
         )

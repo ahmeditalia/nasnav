@@ -25,32 +25,38 @@ class Navbar extends React.Component {
         const { cartItems } = this.props;
         const { pages } = this.state;
         return (
-            <AppBar sx={{ paddingX: 10 }} position="fixed">
-                <Toolbar>
-                    <Stack flexDirection={"row"} flexGrow={1}>
-                        {
-                            pages.map((page) => {
-                                return (
-                                    <Link to={page.url} style={{ textDecoration: "none" }}>
-                                        <Button
+            <>
+                <AppBar sx={{ paddingX: { xs: 0, md: 20 } }} position="fixed">
+                    <Toolbar>
+                        <Stack flexDirection={"row"} flexGrow={1}>
+                            {
+                                pages.map((page) => {
+                                    return (
+                                        <Link
                                             key={page.text}
-                                            sx={{ color: 'white' }}
-                                        >
-                                            {page.text}
-                                        </Button>
-                                    </Link>
+                                            to={page.url}
+                                            style={{ textDecoration: "none" }}>
+                                            <Button
+                                                sx={{ color: 'white' }}
+                                            >
+                                                {page.text}
+                                            </Button>
+                                        </Link>
 
-                                )
-                            })
+                                    )
+                                })
 
-                        }
+                            }
 
-                    </Stack>
-                    <Stack>
-                        <CartButton cartItems={cartItems} />
-                    </Stack>
-                </Toolbar>
-            </AppBar>
+                        </Stack>
+                        <Stack>
+                            <CartButton cartItems={cartItems} />
+                        </Stack>
+                    </Toolbar>
+                </AppBar>
+                <Toolbar />
+            </>
+
         )
     }
 }

@@ -14,24 +14,24 @@ class ProductCard extends Component {
     }
 
     setChecked = (check) => {
-        this.setState({ checked: check })
+        this.setState({ checked: check });
     }
 
     addtoCart = () => {
-        const {addtoCart, product} = this.props;
+        const { addtoCart, product } = this.props;
         addtoCart(product);
         this.setState({ added: true });
     }
 
     removeFromCart = () => {
-        const {removeFromCart, product} = this.props;
+        const { removeFromCart, product } = this.props;
         removeFromCart(product);
         this.setState({ added: false });
     }
 
     render() {
         const { checked, added } = this.state;
-        const {product} = this.props;
+        const { product } = this.props;
         return (
             <Card sx={{ maxWidth: 345, position: "relative" }}
                 onMouseEnter={() => this.setChecked(true)}
@@ -39,7 +39,7 @@ class ProductCard extends Component {
             >
 
                 <Slide
-                    style={{ position: "absolute", zIndex: 100, right: 0 }}
+                    style={{ position: "absolute", right: 0 }}
                     direction="left"
                     in={checked}
                 >
@@ -62,10 +62,14 @@ class ProductCard extends Component {
                     image={require(`../../../images/${product.url}`)}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" sx={{height: 65}}>
+                    <Typography gutterBottom variant="h5" component="div" sx={{ height: 65 }}>
                         {product.name}
                     </Typography>
-                    <Typography fontWeight={"bold"} variant="body1" color="text.secondary" >
+                    <Typography
+                        sx={{ "&::after": { ml: 0.5, content: '"EGP"', display: 'inline-block' } }}
+                        fontWeight={"bold"}
+                        variant="body1"
+                        color="text.secondary" >
                         {product.price}
                     </Typography>
                 </CardContent>
