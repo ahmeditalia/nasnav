@@ -29,8 +29,8 @@ class App extends React.Component {
       <div className="App">
         <Navbar cartItems={cartItems} />
         <Routes>
-          <Route path='/nasnav/' element={<Home />} />
-          <Route path='/nasnav/dashboard' element={
+          <Route path='/' element={<Home />} />
+          <Route path='/dashboard' element={
             <Suspense fallback={<CircularProgress/>}>
               <Dashboard addtoCart={this.addtoCart} removeFromCart={this.removeFromCart} />
             </Suspense>
